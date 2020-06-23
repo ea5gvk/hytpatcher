@@ -1,4 +1,6 @@
-## Hytera IPSC protocol patch tool by Heiko/DL1BZ
+#!/usr/bin/env python3
+#
+# Hytera IPSC protocol patch tool by Heiko/DL1BZ
 # This tool is build to correct some protocol issues if you using the gw_hytera_mmdvm from Kurt/OE1KBC http://ham-dmr.at/?wpfb_dl=651
 # It was made for using a Hytera Repeater RD985 (maybe RD625 too) with Firmware >= 9.xx
 # The tool modify only outgoing UDP packets at the voice & data port sent from gw_hytera_mmdvm to the repeater

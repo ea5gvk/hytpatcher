@@ -152,6 +152,10 @@ def process(pkt):
     # we accept now the packet in netqueue with all changes and transmit it
     pkt.accept()
 
+# reserved for do additional things with the packet if required
+def modify_packet(_pkt):
+     return _pkt
+
 # if __name__ == "__main__":
 
 # define that we want to use netqueue

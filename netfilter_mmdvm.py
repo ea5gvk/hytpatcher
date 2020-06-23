@@ -17,7 +17,7 @@
 # http://www.netfilter.org/documentation/HOWTO/netfilter-hacking-HOWTO-3.html
 # http://www.linuxjournal.com/article/7356
 
-# thanks a lot to Cortney/N0MJS for help me to convert some data and important information about MMDVM things
+# thanks a lot to Cortney/N0MJS (developer of Hblink3 and my mentor) for help me to convert some data and important information about MMDVM things
 # Hytera IPSC protocol was analyzed with DMRShark https://github.com/nonoo/dmrshark and information from https://github.com/kb1isz/OpenIPSC/blob/master/README.hytera
 
 import netfilterqueue
@@ -150,9 +150,6 @@ def process(pkt):
     # we accept now the packet in netqueue with all changes and transmit it
     pkt.accept()
 
-def modify_packet(mpkt):
-    return mpkt
-
 # if __name__ == "__main__":
 
 # define that we want to use netqueue
@@ -162,7 +159,11 @@ nfqueue.bind(1, process)
 
 try:
     # define the iptables rules for process only the packets we need to modify redirected to netqueue number 1
+    #
+    # the gw_hytera_mmdvm send with IP 192.168.254.9 (IP of Pi) and the Hytera repeater RD985 has IP 192.168.254.8
+    # we use netqueue for modify packets betweeen the voice & data port 62006 only with direction gw_hytera_mmdvm->Hytera repeater RD985
     os.system("iptables -A OUTPUT -p udp -s 192.168.254.9 -d 192.168.254.8 --dport 62006 -j NFQUEUE --queue-num 1")
+    # DMRGateway and gw_hytera_mmdvm are linked via 127.0.0.1, we need only the direction DMRGateway->gw_hytera_mmdvm with destination port 62022
     os.system("iptables -A OUTPUT -p udp -s 127.0.0.1 -d 127.0.0.1 --dport 62022 -j NFQUEUE --queue-num 1")
     nfqueue.run()
 except:
@@ -172,6 +173,3 @@ except:
     os.system("iptables -F")
     # exit the program
     sys.exit(1)
-
-# iptables -A OUTPUT -p udp -s 192.168.254.9 -d 192.168.254.8 --dport 62006 -j NFQUEUE --queue-num 1
-# sudo iptables -A INPUT -d 127.0.0.1/32 -j NFQUEUE --queue-num 1

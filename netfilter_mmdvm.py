@@ -29,6 +29,7 @@ import os
 from binascii import b2a_hex as ahex
 from binascii import a2b_hex as bhex
 from time import time
+from dmr_utils3.utils import int_id
 
 from scapy.all import *
 
@@ -102,7 +103,7 @@ def process(pkt):
           print("------ packet processing MMDVM ------")
           p1 = bytearray(p[48:82])
           p1 = ahex(p1)
-          print(p1,":from DMRGateway(payload)    Seq.Nr:",hex(p[32]),"Byte15-Flags:",format(p[43],'08b'),check_FrameType_MMDVM(p[43]))
+          print(p1,":from DMRGateway(payload)    Seq.Nr:",hex(p[32]),"Byte15-Flags:",format(p[43],'08b'),check_FrameType_MMDVM(p[43]),"SrcId:",int_id(p[33:36]),"T:",int_id(p[36:39]))
           # swap the ambe mmdvm payload HiByte<>LowByte needed for use in Hytera ambe payload
           p2 = byte_swap(p1)
           # save swapped ambe payload in ambe_paylaod_mmdvm for later insert in Hytera ambe payload

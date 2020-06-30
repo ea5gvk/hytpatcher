@@ -21,10 +21,10 @@
 # https://pypi.python.org/pypi/NetfilterQueue/0.3
 # http://www.netfilter.org/documentation/HOWTO/netfilter-hacking-HOWTO-3.html
 # http://www.linuxjournal.com/article/7356
-# https://github.com/n0mjs710/hblink3
-# https://github.com/n0mjs710/dmr_utils3
-# https://github.com/nonoo/dmrshark
-# https://github.com/kb1isz/OpenIPSC/blob/master/README.hytera
+# https://github.com/n0mjs710/hblink3 (a small, but very good dmr master as open source)
+# https://github.com/n0mjs710/dmr_utils3 (a must have for do some DMR things in python like calculating FEC and so on...)
+# https://github.com/nonoo/dmrshark (very helpful for invesigation of HYTERA_IPSC !)
+# https://github.com/kb1isz/OpenIPSC/blob/master/README.hytera (good for overview, but not all is right)
 
 # thanks a lot to Cortney/N0MJS (developer of Hblink3 and my mentor) for help me to convert some data and important information about MMDVM things
 # Hytera IPSC protocol was deeply analyzed with DMRShark https://github.com/nonoo/dmrshark and information from https://github.com/kb1isz/OpenIPSC/blob/master/README.hytera

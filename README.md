@@ -23,7 +23,7 @@ Issues after investigation with my RD985 will be fixed with this tool:
 
 ...will be continue after next investigations, it's a work in progress...
 
-Special thanks to Cort/N0MJS, the developer of [HBlink for Python3](https://github.com/n0mjs710/hblink3) for support me with a lot of information and help with MMDVM protocol specific things and some cool python solutions !
+Special thanks to Cort/N0MJS, the developer of [HBlink for Python3](https://github.com/n0mjs710/hblink3) for support me with a lot of information and help with MMDVM protocol specific things and some cool python solutions for my tool !
 
 73 Heiko/DL1BZ  
 sysop DB0OLL/DB0SPB, co-sysop DB0GRZ/DB0NLS, admin and owner DMR-master LausitzLink

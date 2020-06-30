@@ -1,6 +1,7 @@
 # hytpatcher
 A tool for fixing some network protocol (ipsc) issues between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and a Hytera repeater RD985 with firmware >= 9.xx
 We correct some of the UDP packets after sent from [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) with the help of [netqueue](https://pypi.org/project/NetfilterQueue/) and [scapy](https://scapy.net/) for modification and packet processing. No modification of [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) is required and possible (because it's unfortunately closed source).
+We proccessing only UDP packets between DMRGateway and [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and the repeater itself.
 
 This tool is AS IS - but it's not ready yet.
 NO SUPPORT at this time !

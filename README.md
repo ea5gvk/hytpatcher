@@ -3,6 +3,8 @@ A tool for fixing some network protocol (HYTERA_IPSC) issues between [gw_hytera_
 We correct some of the UDP packets after sent from [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) with the help of [netqueue](https://pypi.org/project/NetfilterQueue/) and [scapy](https://scapy.net/) for modification and packet processing. No modification of [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) is required and possible (because it's unfortunately closed source).
 We are proccessing only UDP packets between [DMRGateway](https://github.com/g4klx/DMRGateway) and [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and the repeater itself, depend on which ports are defined.
 
+If you don't using a Hytera repeater with the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) this tool can do nothing for you !
+
 This tool is **AS IS** - but it's not ready yet!
 **NO SUPPORT at the time I work on it !**
 It was made for using and working, not for the best software design :)

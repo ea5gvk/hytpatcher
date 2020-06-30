@@ -4,7 +4,7 @@ We correct some of the UDP packets after sent from [gw_hytera_mmdvm](http://ham-
 We are proccessing only UDP packets between [DMRGateway](https://github.com/g4klx/DMRGateway) and [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and the repeater itself, depend on which ports are defined.
 
 This tool is **AS IS** - but it's not ready yet!
-**NO SUPPORT at this time !**
+**NO SUPPORT at the time I worked on !**
 It was made for using and working, not for the best software design :)
 This tool was made for running on a Raspberry Pi with debian buster and Python3.
 

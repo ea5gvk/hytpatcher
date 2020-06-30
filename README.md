@@ -14,7 +14,7 @@ Issues after investigation will be fixed with this tool:
 3. HYTERA_IPSC packets from [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) to the repeater have a wrong UDP checksum. (fixed)
 4. VOICE_START_HYTERA packet payload maybe not complete filled too - replace with payload from similar/first mmdvm-packet which starts the transmission (fixed)
 
-...will be continue after next investigations...
+...will be continue after next investigations, it's a work in progress...
 
 73 Heiko/DL1BZ
 

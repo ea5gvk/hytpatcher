@@ -11,6 +11,7 @@ Issues after investigation will be fixed with this tool:
 1. If the DMRGateway sends the last packet for call termination (VOICE_TERMINATOR_WITH_LC) then the gw_hytera_mmdvm don't fill the similar IPSC-packet (send to repeater) with the payload (fill all with 00 instead of payload with VOICE_TERMINATOR_WITH_LC). So we save the payload from the mmdvm-packet and insert/recover this to the hytera-ipsc-packet at the right place. If we do not so, the dmr devices don't detect the CALL_END and will be shown some "hanging effect" - the transmission will not clearly closed and the dmr device will not come back to RX in time. (fixed)
 2. If we send a unit call 5000 (DMRplus) for asking which reflector is selected, then the answer voice stream come back, the DMRGateway send a VOICE_TERMINATOR_WITH_LC after this transmission, but the gw_hytera_mmdvm do nothing, no ipsc packet will be generated for call termination. (not fixed yet)
 3. UDP ipsc packets from gw_hytera_mmdvm to the repeater have a wrong UDP checksum. (fixed)
+4. Voice_Start_HYTERA maybe not complete too - replace with payload from MMDVM-packet which starts the transmission (fixed)
 
 ...will be continue after next investigations...
 

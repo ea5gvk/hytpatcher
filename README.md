@@ -7,7 +7,9 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 *recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA repeater with CPS, basic network knowledge  
 
-*level:* advanced (made for sysops or owner of HYTERA repeater used in amateur radio digital voice networks only)
+*level:* advanced (made for sysops or owner of HYTERA repeater used in amateur radio digital voice networks only)  
+
+*Any relationships with the manufacturer HYTERA ?* Absolut not, no NDA, no contracts.
 
 Why we need the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) ?  
 The HYTERA repeater can connect only ONE DMR network at the same time and in hamradio we have a DMR network protocol specification called MMDVM/homebrew protocol.

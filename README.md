@@ -5,7 +5,7 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 **required:** Raspberry Pi with debian buster, [gw_hytera_mmdvm V2.1](http://ham-dmr.at/?wpfb_dl=651), [DMRGateway](https://github.com/g4klx/DMRGateway), a HYTERA repeater like RD985 with FW >= 9.x  
 
-*recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things, knowledge of how to program a HYTERA repeater with CPS, basic network knowledge
+*recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio, knowledge of how to program a HYTERA repeater with CPS, basic network knowledge
 
 Why we need the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) ?  
 The HYTERA repeater can connect only ONE DMR network at the same time and in hamradio we have a DMR network protocol specification called MMDVM/homebrew protocol.

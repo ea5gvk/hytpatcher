@@ -5,7 +5,7 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 **required:** Raspberry Pi with debian buster, [gw_hytera_mmdvm V2.1](http://ham-dmr.at/?wpfb_dl=651), [DMRGateway](https://github.com/g4klx/DMRGateway), a HYTERA(tm) repeater like RD985 with FW >= 9.x  
 
-*recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA repeater with CPS, basic network knowledge  
+*recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA(tm) repeater with CPS, basic network knowledge  
 
 *level:* advanced (made for sysops or owner of HYTERA(tm) repeater used in amateur radio digital voice networks only)  
 
@@ -16,7 +16,7 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 Why we need the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) ?  
 The HYTERA(tm) repeater can connect only ONE DMR network at the same time and in hamradio we have a DMR network protocol specification called MMDVM/homebrew protocol.
-A commercial repeater like the HYTERA don't speak MMDVM, only it's own IPSC (IP site connect). So we need a kind of protocol converter between HYTERA_IPSC and MMDVM. That's what the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) do, but with some issues, not much, but...so we try to correct the known issues with this tool.
+A commercial repeater like the HYTERA(tm) don't speak MMDVM, only it's own IPSC (IP site connect). So we need a kind of protocol converter between HYTERA_IPSC and MMDVM. That's what the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) do, but with some issues, not much, but...so we try to correct the known issues with this tool.
 The [DMRGateway](https://github.com/g4klx/DMRGateway) help us to connect up to 5 DMR networks and one [XLX](https://github.com/LX3JL/xlxd) at the same time.
 
 If you don't using a HYTERA(tm) repeater with the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) this tool can't do anything for you !

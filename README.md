@@ -5,6 +5,10 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 **required:** Raspberry Pi with debian buster, [gw_hytera_mmdvm V2.1](http://ham-dmr.at/?wpfb_dl=651), [DMRGateway](https://github.com/g4klx/DMRGateway), a HYTERA(tm) repeater like RD985 with FW >= 9.x  
 
+**required add-ons for python3:** scapy, NetfilterQueue, dmr_utils3, easysnmp  
+
+*Can you help if any problems with installation of the add-ons ?* No, I can't. Please read the installation instructions of the required add-ons.  
+
 *recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA(tm) repeater with CPS, basic network knowledge  
 
 *level:* advanced (made for sysops or owner of HYTERA(tm) repeater used in amateur radio digital voice networks only)  

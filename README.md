@@ -7,7 +7,8 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 **required add-ons for python3:** scapy, NetfilterQueue, dmr_utils3, easysnmp  
 
-*Can you help if any problems with installation of the add-ons ?* No, I can't. Please read the installation instructions of the required add-ons.  
+*Can you help if any problems with installation of the add-ons ?*  
+No, I can't. Please read the installation instructions of the required add-ons. It all depends on how you installed your Linux and how you use it.  
 
 *recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA(tm) repeater with CPS, basic network knowledge  
 
@@ -17,7 +18,8 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 **USED TOOLS:** [tcpdump](https://www.tcpdump.org/), [dmrshark](https://github.com/nonoo/dmrshark), [dmr_utils3 for python](https://github.com/n0mjs710/dmr_utils3), [scapy](https://scapy.net/), [python3](https://www.python.org/), [ETSI TS 102 361-1 "DMR Air Interface (AI) protocol"](https://www.etsi.org/deliver/etsi_ts/102300_102399/10236101/01.04.05_60/ts_10236101v010405p.pdf)  
 **PROPERTY:** This work represents the author's interpretation of the HYTERA(tm) IPSC protocol and MMDVM protocol. It is intended for purposes in amateur radio digital voice networks and not for commercial gain. It's not guaranteed to work in any cases.
 
-*Any relationships with the manufacturer HYTERA(tm) ?* Absolut not, no NDA, no contracts.
+*Any relationships with the manufacturer HYTERA(tm) ?*  
+Absolut not, no NDA, no contracts.  
 
 Why we need the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) ?  
 The HYTERA(tm) repeater can connect only ONE DMR network at the same time and in hamradio we have a DMR network protocol specification called MMDVM/homebrew protocol.

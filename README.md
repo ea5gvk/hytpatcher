@@ -9,6 +9,9 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 *level:* advanced (made for sysops or owner of HYTERA repeater used in amateur radio digital voice networks only)  
 
+**METHOD:** Reverse engineering by pattern matching, process of elimination and practical tests
+**PROPERTY:** This work represents the author's interpretation of the HYTERA(tm) IPSC protocol. It is intended for academic purposes and not for commercial gain.
+
 *Any relationships with the manufacturer HYTERA ?* Absolut not, no NDA, no contracts.
 
 Why we need the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) ?  

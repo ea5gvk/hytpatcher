@@ -5,7 +5,7 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 
 **required:** Raspberry Pi (3B or higher) with debian buster, [gw_hytera_mmdvm V2.1](http://ham-dmr.at/?wpfb_dl=651), [DMRGateway](https://github.com/g4klx/DMRGateway),  
 a HYTERA(tm) repeater like RD985 with FW >= 9.x  
-You can use [this Image](https://www.a23-wertheim.de/downloads/dmr/dmrgateway-2/file/35-dmrgateway-image-a23-06092018-zip) for Reaspberry Pi (made by Peter/DG9FFM) and install the required things you need like python3 and so on. 
+You can use [this Image](https://www.a23-wertheim.de/downloads/dmr/dmrgateway-2/file/35-dmrgateway-image-a23-06092018-zip) for Raspberry Pi (made by Peter/DG9FFM) and install the additional and required softwware you need like python3 and so on with the help of apt. 
 
 **required add-ons for python3:** scapy, NetfilterQueue, dmr_utils3, easysnmp  
 

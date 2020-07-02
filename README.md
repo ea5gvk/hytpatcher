@@ -8,7 +8,7 @@ We are proccessing only UDP packets between [DMRGateway](https://github.com/g4kl
 **required add-ons for python3:** scapy, NetfilterQueue, dmr_utils3, easysnmp  
 
 *Can you help if any problems with installation of the add-ons ?*  
-No, I can't. Please read the installation instructions of the required add-ons. It all depends on how you installed your Linux and how you use it. The recommended way is to use "pip3 install <add-on>" for installation or "pip3 install <add-on> --upgrade" for upgrade an installed add-on.  
+No, I can't. Please read the installation instructions of the required add-ons. It all depends on how you installed your Linux and how you use it. The recommended way is to use "pip3 install add_on" for installation or "pip3 install add_on --upgrade" for upgrade an installed add-on, where add_on represent the name as a placeholder of the add-on.  
 
 *recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA(tm) repeater with CPS, basic network knowledge  
 

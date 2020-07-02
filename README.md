@@ -1,25 +1,25 @@
 # hytpatcher
-A free tool for fixing some network protocol (HYTERA_IPSC) issues between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and a Hytera repeater RD985 with firmware >= 9.xx
+A free tool for fixing some network protocol (HYTERA_IPSC) issues between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and a HYTERA(tm) repeater RD985 with firmware >= 9.xx
 We correct some of the UDP packets after sent from [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) with the help of [netqueue](https://pypi.org/project/NetfilterQueue/) and [scapy](https://scapy.net/) for modification and packet processing. No modification of [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) is required and possible (because it's unfortunately closed source).
 We are proccessing only UDP packets between [DMRGateway](https://github.com/g4klx/DMRGateway) and [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and between [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) and the repeater itself, depend on which ports are defined.
 
-**required:** Raspberry Pi with debian buster, [gw_hytera_mmdvm V2.1](http://ham-dmr.at/?wpfb_dl=651), [DMRGateway](https://github.com/g4klx/DMRGateway), a HYTERA repeater like RD985 with FW >= 9.x  
+**required:** Raspberry Pi with debian buster, [gw_hytera_mmdvm V2.1](http://ham-dmr.at/?wpfb_dl=651), [DMRGateway](https://github.com/g4klx/DMRGateway), a HYTERA(tm) repeater like RD985 with FW >= 9.x  
 
 *recommended:* confident use of Linux and python3, knowledge of how to use DMR and MMDVM specific things in amateur radio digital voice networks, knowledge of how to program a HYTERA repeater with CPS, basic network knowledge  
 
-*level:* advanced (made for sysops or owner of HYTERA repeater used in amateur radio digital voice networks only)  
+*level:* advanced (made for sysops or owner of HYTERA(tm) repeater used in amateur radio digital voice networks only)  
 
 **METHOD:** Reverse engineering by pattern matching, process of elimination and practical tests  
 **PROPERTY:** This work represents the author's interpretation of the HYTERA(tm) IPSC protocol and MMDVM protocol. It is intended for purposes in amateur radio digital voice networks and not for commercial gain. It's not guaranteed to work in any cases.
 
-*Any relationships with the manufacturer HYTERA ?* Absolut not, no NDA, no contracts.
+*Any relationships with the manufacturer HYTERA(tm) ?* Absolut not, no NDA, no contracts.
 
 Why we need the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) ?  
-The HYTERA repeater can connect only ONE DMR network at the same time and in hamradio we have a DMR network protocol specification called MMDVM/homebrew protocol.
+The HYTERA(tm) repeater can connect only ONE DMR network at the same time and in hamradio we have a DMR network protocol specification called MMDVM/homebrew protocol.
 A commercial repeater like the HYTERA don't speak MMDVM, only it's own IPSC (IP site connect). So we need a kind of protocol converter between HYTERA_IPSC and MMDVM. That's what the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) do, but with some issues, not much, but...so we try to correct the known issues with this tool.
 The [DMRGateway](https://github.com/g4klx/DMRGateway) help us to connect up to 5 DMR networks and one [XLX](https://github.com/LX3JL/xlxd) at the same time.
 
-If you don't using a Hytera repeater with the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) this tool can't do anything for you !
+If you don't using a HYTERA(tm) repeater with the [gw_hytera_mmdvm](http://ham-dmr.at/?wpfb_dl=651) this tool can't do anything for you !
 
 This tool is **AS IS** - but it's not ready yet!
 **NO SUPPORT at the time I work on it !**
